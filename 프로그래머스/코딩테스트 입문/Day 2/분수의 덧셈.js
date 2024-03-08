@@ -1,9 +1,9 @@
+// 유클리드 호제법을 이용함 최대공약수(GCD) 계산
 const calculateGcd = (a, b) => {
-    if (b === 0) {
+    if (b === 0) 
         return a;
-    } else {
+    else
         return calculateGcd(b, a % b);
-    }
 }
 
 function solution(numer1, denom1, numer2, denom2) {
