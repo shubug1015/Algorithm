@@ -16,13 +16,13 @@ function solution(board) {
               x < board.length &&
               y >= 0 &&
               y < board[i].length &&
-              board[x][y] == 0
+              board[x][y] === 0
             )
               board[x][y] = 2;
           });
         }
       }
     }
-    board.map(v1 => v1.map(v2 => v2 == 0 ? answer++ : 0));
+    board.map(v1 => v1.map(v2 => v2 === 0 ? answer++ : 0));
     return answer;
   }
